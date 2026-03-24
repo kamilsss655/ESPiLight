@@ -1,6 +1,8 @@
-[![Build Status](https://travis-ci.org/puuu/ESPiLight.svg?branch=master)](https://travis-ci.org/puuu/ESPiLight)
 
 # ESPiLight
+
+This is a fork of the awesome [ESPiLight](https://github.com/puuu/ESPiLight) library which I had to do 
+some very small changes to fix the compilation errors to make it work on modern platforms.
 
 This Arduino library is a port of the [pilight](https://pilight.org/)
 433.92MHz protocols to the Arduino platform. It was tested with a

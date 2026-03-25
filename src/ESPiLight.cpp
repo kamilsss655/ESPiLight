@@ -187,9 +187,9 @@ static void calc_lengths() {
 
 void ESPiLight::initReceiver(byte inputPin) {
   int16_t interrupt = digitalPinToInterrupt(inputPin);
-  if (_interrupt == interrupt) {
-    return;
-  }
+  // if (_interrupt == interrupt) { // allow to reinit when using single pin for TX/RX like CC1101
+  //   return;
+  // }
   if (_interrupt >= 0) {
     detachInterrupt((uint8_t)_interrupt);
   }
